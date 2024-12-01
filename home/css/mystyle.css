@@ -6,6 +6,8 @@ body {
     text-align: center;
   }
   p {
+    margin: 20px;
+    padding: 10px;
     font-family: verdana;
     font-size: 20px;
   }
