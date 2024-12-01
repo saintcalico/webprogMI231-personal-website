@@ -1,5 +1,5 @@
 body {
-    background-color: #90bf93;
+    background-image: url("https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/main/home/bg1.jpg");
   }
   h1 {
     color: black;
@@ -14,7 +14,7 @@ body {
   p {
     margin: 20px;
     padding: 10px;
-    font-family: verdana;
+    font-family: verdana, sans-serif;
     font-size: 20px;
   }
   .container {
