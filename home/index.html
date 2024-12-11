@@ -1,97 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Personal Profile Web Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #b6c687;
-            color: #333;
-        }
-        h1 {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #e8edd9;
-            border-radius: 10px;
-            
-        }
-        .about-me, .education, .additional-info, .gallery-section {
-            margin-bottom: 20px;
-        }
-        h2 {
-            margin-bottom: 10px;
-            color: #555;
-        }
-        .content {
-            text-align: justify;
-        }
-        .gallery {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-        .gallery img {
-            max-width: 200px;
-            height: auto;
-            border-radius: 10px;
-          
-        }
-    </style>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
+<div class="container-fluid mt-3">
     <h1>Personal Profile Web Page</h1>
-
-  
-    <div class="container about-me">
-        <h2>About Me</h2>
-        <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md bg-primary text-white" style="background-color: #06402b;">
+          <h2>About Me</h2>
             <p>
-                I'm Feliz Salting, a 2nd year BSIT-MI student in Asia Pacific College. 
-                I'm also an external relations executive director in APC-Microsoft Community. 
-                For more personal info, I have a pet dog named Jake even though she's a girl. 
-                I'm also an only child with two loving parents.
+                I'm Feliz Salting, a 2nd year BSIT-MI student in Asia Pacific College. <br>
+                I'm also an external relations executive director in APC-Microsoft Community. <br>
+                For more personal info, I have a pet dog named Jake even though she's a girl. <br>
+                I'm also an only child with two loving parents. <br>
             </p>
         </div>
-    </div>
-
-    <div class="container education">
-        <h2>Education / Achievements</h2>
-        <div class="content">
-            <p>
-                Currently a 2nd year student in Asia Pacific College. Attended junior and senior high school in Pasay City National Science High School.
+        <div class="col-md bg-dark text-white">
+          <h2>Education/Achievements</h2>
+            <p>Currently a 2nd year student in Asia Pacific College.<br>
+              Attended junior and senior high school in Pasay City National Science High School and also graduated with honors.
             </p>
-        </div>
+          </div>
+      </div>  
     </div>
-
-  
-    <div class="container additional-info">
-        <h2>Additional Information</h2>
-        <div class="content">
-            <p>
-                <strong>Course:</strong> BSIT-MI<br>
-                <strong>IT Experience:</strong> I do some gaming and try to design websites sometimes.<br>
-                <strong>Hobbies & Interests:</strong> Reading fiction books and watching films.<br>
-                <strong>Goals In Life / Dream:</strong> Make money to support my family’s lifestyle while also 
-                creating projects that are produced from my own sincerity and grit.
-            </p>
+    <br>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md bg-primary text-white"style="background-color: #06402b;">
+          <h2>Additional Information</h2>
+          <p>
+            <strong>Course:</strong> Bachelor of Science in Information Technology<br>
+            with a specialization in Mobile and Internet Technologies
+        </p>
         </div>
-    </div>
-
-    <div class="container gallery-section">
-        <h2>Picture Gallery</h2>
-        <div class="gallery">
-            <img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/main/home/fel1.jpg" alt="fel1">
-            <img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/main/home/fel2.jpg" alt="fel2">
-            <img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/main/home/fel.jpg" alt="fel">
+        <div class="col-md bg-dark text-white">
+          <h2>IT Experience:</h2>
+          <p>
+            <li>Basic Python</li>
+            <li>Basic Java</li>
+            <li>Beginner SQL</li>
+            <li>Simple figma website and app design </li><br>
+          </p>
         </div>
+        <div class="col-md bg-primary text-white"style="background-color: #06402b;">
+          <h2>Hobbies & Interests:</h2>
+          <li>Reading fiction books watching films </li>
+          <li>Watching films </li><br>
+        </div>
+        <div class="col-md bg-dark text-white">
+          <h2>Goals in life:</h2>
+          <li>Make money to support my family</li>
+            <li>Have a fulfilling career and not be burnout in the tech industry LOL.</li><br>
+        </div>
+      </div>  
     </div>
-</body>
-</html>
+  </div>
