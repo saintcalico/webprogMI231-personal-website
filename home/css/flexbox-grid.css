@@ -2,46 +2,60 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #b6c687;
+    background-image: url("https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/feature/4_FS_customize_my_website/home/bgg.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
     color: #333;
 }
-
 h1 {
     text-align: center;
     margin-top: 20px;
+    color: #fff; 
 }
-
 .container {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background: #e8edd9;
+    background: rgba(232, 237, 217, 0.9); 
     border-radius: 10px;
 }
-
 .about-me, .education, .additional-info, .gallery-section {
     margin-bottom: 20px;
 }
-
 h2 {
     margin-bottom: 10px;
     color: #555;
+    text-align:center;
 }
-
 .content {
-    text-align: justify;
+    text-align: center;
 }
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-.gallery img {
+.profile-image {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 50%; 
+    display: block;
+    margin: 0 auto; 
+    border: 5px solid rgba(232, 237, 217, 0.9); 
 }
+h3 {
+    text-align:center;
+    }
+
+
+a:link, a:visited {
+    background-color: #f4f4f4;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
