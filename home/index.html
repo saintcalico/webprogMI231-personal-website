@@ -7,18 +7,22 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #b6c687;
+            background-image: url("https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/feature/4_FS_customize_my_website/home/bgg.jpg");
+            background-size: cover; 
+            background-repeat: no-repeat; /* Prevents tiling */
+            background-position: center; /* Centers the image */
             color: #333;
         }
         h1 {
             text-align: center;
             margin-top: 20px;
+            color: #fff; /* Ensures the text is visible on the background */
         }
         .container {
             max-width: 900px;
             margin: 20px auto;
             padding: 20px;
-            background: #e8edd9;
+            background: rgba(232, 237, 217, 0.9); /* Semi-transparent background for readability */
             border-radius: 10px;
         }
         .about-me, .education, .additional-info, .gallery-section {
@@ -27,28 +31,28 @@
         h2 {
             margin-bottom: 10px;
             color: #555;
+            text-align:center;
         }
         .content {
-            text-align: justify;
+            text-align: center;
         }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%; 
+            display: block;
+            margin: 0 auto; 
+            border: 5px solid rgba(232, 237, 217, 0.9); 
         }
-        .gallery img {
-            width: 200px; 
-            height: 200px; 
-            object-fit: cover; 
-            border-radius: 10px;
-        }
+        h3 {
+        	text-align:center;
+            }
     </style>
 </head>
 <body>
-    <h1>Personal Profile Web Page</h1>
-
     <div class="container about-me">
+        <img class="profile-image" src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/main/home/fel1.jpg" alt="Feliz Salting">
         <h2>About Me</h2>
         <div class="content">
             <p>
@@ -57,39 +61,10 @@
                 For more personal info, I have a pet dog named Jake even though she's a girl. 
                 I'm also an only child with two loving parents.
             </p>
-        </div>
-    </div>
-
-    <div class="container education">
-        <h2>Education / Achievements</h2>
-        <div class="content">
-            <p>
-                Currently a 2nd year student in Asia Pacific College. Attended junior and senior high school in Pasay City National Science High School.
-            </p>
-        </div>
-    </div>
-
-    <div class="container additional-info">
-        <h2>Additional Information</h2>
-        <div class="content">
-            <p>
-                <strong>Course:</strong> BSIT-MI<br>
-                <strong>IT Experience:</strong> I do some gaming and try to design websites sometimes.<br>
-                <strong>Hobbies & Interests:</strong> Reading fiction books and watching films.<br>
-                <strong>Goals In Life / Dream:</strong> Make money to support my family
-            </p>
-        </div>
-    </div>
-
-    <div class="container gallery-section">
-        <h2>Picture Gallery</h2>
-        <div class="gallery">
-            <img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/main/home/fel1.jpg" alt="fel1">
-            <img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/main/home/fel2.jpg" alt="fel2">
-            <img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/main/home/fel.jpg" alt="fel">
+            <h3>Education and Achievements | Additional Info | IT Experience | Picture Gallery</h3>
         </div>
     </div>
 </body>
 </html>
 
-
+     
