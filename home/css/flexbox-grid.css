@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/feature/4_FS_customize_my_website/home/bgg.jpg");
+    background-image: url("https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/webprogMI231-personal-website/main/home/bgg.jpg");
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -55,8 +55,6 @@ h1::before {
     border-radius: 10px;
     text-align: center;
 }
-
-/* Profile Image Styling */
 .profile-image {
     width: 200px;
     height: 200px;
