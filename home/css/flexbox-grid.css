@@ -1,3 +1,4 @@
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,18 +9,21 @@ body {
     background-position: center; 
     color: #333;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
+/* H1 Styling */
 h1 {
     position: relative;
-    font-size: 14vw;
-    color: #252839;
-    -webkit-text-stroke: 0.3vw #383d52;
-    text-transform: uppercase;
+    font-size: 3rem;
+    color: #fff;
     text-align: center;
+    -webkit-text-stroke: 0.1rem #252839;
+    text-transform: uppercase;
+    z-index: 2;
 }
 
 h1::before {
@@ -30,7 +34,7 @@ h1::before {
     width: 0;
     height: 100%;
     color: #0ef;
-    -webkit-text-stroke: 0vw #383d52;
+    -webkit-text-stroke: 0;
     border-right: 2px solid #0ef;
     overflow: hidden;
     animation: animate 6s linear infinite;
@@ -45,52 +49,53 @@ h1::before {
     }
 }
 
+/* Container Styling */
 .container {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     background: rgba(232, 237, 217, 0.9); 
     border-radius: 10px;
-}
-
-.about-me, .education, .additional-info, .gallery-section {
-    margin-bottom: 20px;
-}
-
-h2 {
-    margin-bottom: 10px;
-    color: #555;
     text-align: center;
 }
 
-.content {
-    text-align: center;
-}
-
+/* Profile Image Styling */
 .profile-image {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%; 
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
     border: 5px solid rgba(232, 237, 217, 0.9); 
 }
 
-h3 {
-    text-align: center;
+/* Typography */
+h2 {
+    color: #555;
+    margin-bottom: 1rem;
 }
 
+.content {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* Links */
 a:link, a:visited {
     background-color: #f4f4f4;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
+    color: black;
+    padding: 10px 15px;
     text-decoration: none;
-    display: inline-block;
     border-radius: 5px;
 }
 
 a:hover, a:active {
     background-color: red;
+    color: white;
 }
