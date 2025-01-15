@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi I'm Feliz</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Folders</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-        <h1>HI <br>
-        I'M FELIZ!</h1>
-        <div class="folders left">
-            <div class="folder"><img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/midterm_draft/home/file.png" alt="Folder"> About me</div>
-            <div class="folder"><img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/midterm_draft/home/file.png" alt="Folder"> IT experience</div>
-            <div class="folder"><img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/midterm_draft/home/file.png" alt="Folder"> Education</div>
-            <div class="folder"><img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/midterm_draft/home/file.png" alt="Folder"> Interests</div>
-        </div>
-        <div class="folders right">
-            <div class="folder"><img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/midterm_draft/home/file.png" alt="Folder"> Picture Gallery</div>
-            <div class="folder"><img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/midterm_draft/home/file.png" alt="Folder"> Goals</div>
-            <div class="folder"><img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/midterm_draft/home/file.png" alt="Folder"> Contact me</div>
-        </div>
+  <div class="container">
+    <div class="folders left">
+      <div class="folder" onclick="showContent('about')">
+        <img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/midterm_draft/home/file.png" alt="About Me">
+        About me
+      </div>
+      <div class="folder" onclick="showContent('it')">
+        <img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/midterm_draft/home/file.png" alt="IT Experience">
+        IT experience
+      </div>
     </div>
+
+    <div class="folders right">
+      <div class="folder" onclick="showContent('gallery')">
+        <img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/midterm_draft/home/file.png" alt="Picture Gallery">
+        Picture Gallery
+      </div>
+      <div class="folder" onclick="showContent('contact')">
+        <img src="https://raw.githubusercontent.com/saintcalico/webprogMI231-personal-website/midterm_draft/home/file.png" alt="Contact Me">
+        Contact me
+      </div>
+    </div>
+
+    <div id="about" class="folder-content">
+      <h2>About Me</h2>
+      <p>Content about me goes here.</p>
+    </div>
+
+    <div id="it" class="folder-content">
+      <h2>IT Experience</h2>
+      <p>Details about my IT experience go here.</p>
+    </div>
+
+    <div id="gallery" class="folder-content">
+      <h2>Picture Gallery</h2>
+      <p>Pictures and descriptions go here.</p>
+    </div>
+
+    <div id="contact" class="folder-content">
+      <h2>Contact Me</h2>
+      <p>Contact details go here.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
