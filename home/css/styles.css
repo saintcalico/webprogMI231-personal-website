@@ -12,95 +12,40 @@ body {
     padding: 0 50px;
   }
   
-  .folders-left,
-  .folders-right {
+  .folders {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
   
   .folder {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     background-color: #f4c542;
     color: black;
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
+  }
+  
+  .folder img {
+    width: 24px;
+    height: 24px;
   }
   
   .folder:hover {
     transform: scale(1.1);
   }
   
-  .center {
-    text-align: center;
-  }
-  
-  .circle {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, #b3e5fc 50%, #7cb342 50%);
-    margin: 0 auto 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  
-  .sky {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .cloud {
-    width: 50px;
-    height: 25px;
-    background-color: #ffffff;
-    border-radius: 50px;
-    position: relative;
-  }
-  
-  .cloud::before,
-  .cloud::after {
-    content: '';
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 50px;
-  }
-  
-  .cloud::before {
-    width: 30px;
-    height: 30px;
-    top: -15px;
-    left: 10px;
-  }
-  
-  .cloud::after {
-    width: 40px;
-    height: 40px;
-    top: -20px;
-    left: 20px;
-  }
-  
-  .hills {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50%;
-    background: #7cb342;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-  }
-  
   h1 {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
   }
   
