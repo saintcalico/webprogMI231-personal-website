@@ -49,10 +49,18 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
-
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; 
+    display: block;
+    margin: 0 auto;
+    border: 5px solid rgba(232, 237, 217, 0.9); 
+}
 .folder-content-container {
   position: absolute;
-  top: calc(50% + 100px); /* Places the flexbox content below the title */
+  top: calc(50% + 100px); 
   left: 50%;
   transform: translateX(-50%);
   display: flex;
