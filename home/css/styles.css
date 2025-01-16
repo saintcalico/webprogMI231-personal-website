@@ -49,10 +49,22 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
-.folder-content-container, .confirmation {
+.folder-content-container {
   position: absolute;
   top: calc(50% + 100px); 
   left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+}
+.confirmation {
+  position: absolute;
+  top: calc(50% + 100px); 
+  left: 35%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
