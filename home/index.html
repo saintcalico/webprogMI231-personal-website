@@ -31,7 +31,18 @@
                 <li>I'm also interested in books, add me on goodreads!</li>
             </div>
             <div id="gallery" class="folder-content">
-                <p>This is the Picture Gallery content.</p>
+                <div id="app">
+                    <div class="gallery-container">
+                      <figure v-for="photo in photos" :key="photo.name">
+                        <img :src="photo.url" :alt="photo.name">
+                        <figcaption>{{ photo.name }}</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                
+                <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+                <script src="js/gallery.js"></script>
             </div>
             <div id="goals" class="folder-content">
                 <p>My goal is to literally just get through my classes at this point. For now I don't have a long term goal. </p>
