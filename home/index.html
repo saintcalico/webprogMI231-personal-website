@@ -13,13 +13,14 @@
         <div class="folder-content-container">
             <div id="about" class="folder-content">
                 <p>I'm an aspiring software engineer currently studying in Asia Pacific College, enrolled in an undergrad program which is Bachelor of Science in Information Technology with a specialization in Internet and Mobile Technologies.<br>
-                Before you explore this page, let's play 2 truths and one lie! I have a dog with a human name, I have 3 siblings, and I collect anik-aniks. Contact me to submit your answer!  </p>
+                Random facts about me: I have a dog with a human name, I'm an only child  </p>
             </div>
             <div id="it-experience" class="folder-content">
-                <p>This is the IT Experience content.</p>
+                <li>I previously worked on "CropSurplus" with my colleague Isaac Estabillo, it's an e-commerce app for overproduced goods .<li>
+                <li>I also worked on "FurBnB" with my colleagues Lalainne Andaya, Atasha Doria, and Michelle Pineda, it's an app for booking pet services </li>
             </div>
             <div id="education" class="folder-content">
-                <p>This is the Education content.</p>
+                <li>Dean's Lister (A.Y. 2023-2024)</li>
             </div>
             <div id="interests" class="folder-content">
                 <p>This is the Interests content.</p>
@@ -32,6 +33,22 @@
             </div>
             <div id="contact" class="folder-content">
                 <p>This is the Contact Me content.</p>
+
+                <form @submit.prevent="addEntry">
+                    <div>
+                        <p>
+                            Your Name: <br>
+                            <input type="text" v-model="name" placeholder="Enter your name" required />
+                        </p>
+                        <p>
+                            What are your thoughts about this website <br>
+                            <input type="text" v-model="message" placeholder="Enter your thoughts and opinion" required />
+                        </p>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+         
+                <p v-if="confirmationMessage" class="confirmation">{{ confirmationMessage }}</p>
             </div>
         </div>
         
@@ -63,5 +80,7 @@
     </div>
         
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/guestbook.js"></script>
 </body>
 </html>
