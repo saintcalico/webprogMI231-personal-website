@@ -8,16 +8,6 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-
-.folders {
-  display: flex;
-  flex-direction: column;
 }
 
 .folders.left {
@@ -49,11 +39,28 @@ body {
   margin-bottom: 5px;
 }
 
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .folder-content-container {
-  width: 100%;
+  position: absolute;
+  top: calc(50% + 100px); /* Places the flexbox content below the title */
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
 }
 
 .folder-content {
@@ -66,16 +73,9 @@ body {
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  max-width: 600px;
-  width: 80%;
+  margin-top: 20px;
 }
 
 .folder-content.active {
   display: flex;
-}
-
-h1 {
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
 }
